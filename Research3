@@ -1,0 +1,149 @@
+/*
+	 * Research - look up the javadocs for String and Array. 
+	 * Select five methods from each and write about 1) what the method signatures are; 
+	 * 2) what the method does; 3) and why would it be useful/how could it be used.
+	 */
+	 
+	 
+	 Array 
+	 1. static int	getInt(Object array, int index)
+	
+		a) Method signature is the method name and the parameters: getInt (object array, int index)
+		b) Returns the value of the indexed component in the specified array object, as an int.
+		c) The Array parameter would provide a list of Objects and the int index represents a specific location in that list.
+		It could be useful for when you have a long list of data (such as an list of zip codes) and would like to pull out a specific 
+		Object from that list. "Such as the tenth zip code." 
+		
+	 2. static boolean	getBoolean(Object array, int index)
+	  
+	 	a) Method signature is the method name and the parameters: getBoolean(Object array, int index) 
+	 	b) Returns the value of the indexed component in the specified array object, as a boolean.
+	 	c) The Array parameter would provide a list of Objects and the int index represents a specific location in that list.
+	 	It could be useful when you had a list that represents a set of true or false quiz answers and we are looking up a
+	 	specific answer from that list. Such as answer #3 False. 
+		
+	 
+     3. static double getDouble(Object array, int index)
+     
+     	a) Method signature is the method name and the parameters: getDouble(Object array, int index) 
+        b) Returns the value of the indexed component in the specified array object, as a double. 
+        c) The Array parameter would provide a list of Objects and the int index represents a specific location in that list.
+        It could be used if you had a list of GPA averages from students at a State College and we wanted to pull a specific 
+        GPA from that student list. ie 3.75
+        
+        
+        
+      4. static float getFloat(Object array, int index)
+      
+      	a) Method signature is the method name and the parameters: getFloat(Object array, int index)
+        b) Returns the value of the indexed component in the specified array object, as a float.
+        c) The Array parameter would provide a list of Objects and the int index represents a specific location in that list. 
+        A Float is similar to a double, however a Float has 32 bits and a double has 64 bit. A float has less precision and decimal places than a double. 
+        This would be useful if we had to store data on a calculator with very limited memory space. 
+        
+      5. static void setLong(Object array, int index, long l) 
+      
+      	a) Method signature is the method name and the parameters: setLong(Object array, int index, long l)
+      	b) Sets the value of the indexed component of the specified array object to the specified long value.
+      	c) This would be a useful method if we want to calculate the annual federal budget during a specific administration. A long 
+      	data type is able to store up to 9,223,372,036,854,775,807. This method would be useful if we wanted to insert a long value 
+      	into an Array list at a specific index location. 
+      	
+      	
+      	
+      	Strings 
+      	
+      1. char	charAt(int index)
+      	a) Method signature is the method name and the parameters: char charAt(int index)
+        b) Returns the char value at the specified index.
+      	c) This would be useful is we wanted to specify a specific character out of a name. 
+      	For example name = "Ronald McDonald" name.char(0) => "R" Index 0 would return the first letter of our String. 
+      	
+      2. String	concat(String str)
+      	a) Method signature is the method name and the parameters: String concat (String str) 
+		b) Concatenates the specified string to the end of this string.
+		c) This method is useful when we want to combine two Strings such as a first and last name, we can also refer to it
+		later in our code by assigning it to a variable called full name. 
+	
+			String firstname = "Fred";
+			String space = " ";
+			String lastname = "Flintstone";
+		       
+			System.out.println(firstname.concat(space).concat(lastname)); 
+		
+			String fullname = firstname.concat(space).concat(lastname);
+		
+			System.out.println(fullname);
+			
+			
+		3. int	indexOf(int ch)
+		 a) Method signature is the method name and the parameters: int indexOf(int ch)
+		 b) Returns the index within this string of the first occurrence of the specified character.
+		 c) This method is useful when trying to obtain the index position of a specific character in its first 
+		 occurance, what is interesting about this method is that if it isn't able find that specific character it will 
+		 return a -1. 
+		 
+		 	String firstname = "Fred";
+			String	space = " ";
+			String lastname = "Flintstone";
+		       
+			System.out.println(firstname.concat(space).concat(lastname) ); 
+		
+			String fullname = firstname.concat(space).concat(lastname);
+		
+			System.out.println(fullname);
+			
+			System.out.println(fullname.indexOf ("z"));
+			
+		4. int	hashCode()
+		 a) Method signature is the method name and the parameters: int hashCode()
+		 b) Returns a hash code for this string. A hash function is any function that can be used to map data 
+		 of arbitrary size to data of a fixed size.
+		 c) In Java every object has a method hashCode and an Object's hash code allows algorithms and data structures to put 
+		 objects into compartments. It's useful if you have two instances of String variables that share the same literal
+		 value and a hashCode will return a unique numerical signature in order to differentiate between the two. Such as, 
+		 two students in an Array that are both named Melanie. 
+		 
+		     public static void main(String[] args) {
+        Student melanie1 = new Student(1, "Melanie");
+        Student melanie2 = new Student(1, "Melanie");
+        System.out.println("melanie1 hashcode = " + melanie1.hashCode());
+        System.out.println("melanie2 hashcode = " + melanie2.hashCode());
+        System.out.println("Checking equality between melanie1 and melanie2 = " + melanie1.equals(melanie2))
+    
+
+			
+		5. int 	length()
+		a) Method signature is the method name and the parameters: int length()
+ 		b) Returns the length of this string.
+ 		c) This method would be useful if you wanted to validate the lenght of a user password to ensure that it meets the 
+ 		requirements for the amount of characters needed. ie Password length minimum 10 char 
+ 		
+ 		if (password.length() > 10){
+ 			isValidPassword = true;
+ 		} else {
+ 			isValidPassword = false;
+ 		}
+ 		
+ 		
+		 
+		 
+		
+			
+		
+		
+		
+		
+		
+     
+        
+       
+        
+        
+        
+        
+        
+     
+        
+        
+        
